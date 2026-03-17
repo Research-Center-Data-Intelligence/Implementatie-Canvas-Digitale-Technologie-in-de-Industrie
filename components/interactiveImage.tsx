@@ -28,8 +28,8 @@ export default function InteractiveImage() {
     },
     {
       id: 2,
-      top: "62%",
-      left: "31%",
+      top: "80%",
+      left: "10%",
 
       href: "/customerService",
       info: {
@@ -40,8 +40,8 @@ export default function InteractiveImage() {
     },
     {
       id: 3,
-      top: "50%",
-      left: "65%",
+      top: "60%",
+      left: "85%",
 
       href: "/inkomendeLogistiek",
       info: {
@@ -52,8 +52,8 @@ export default function InteractiveImage() {
     },
     {
       id: 4,
-      top: "47%",
-      left: "57%",
+      top: "50%",
+      left: "65%",
 
       href: "/inkoop",
       info: {
@@ -64,8 +64,8 @@ export default function InteractiveImage() {
     },
     {
       id: 5,
-      top: "40%",
-      left: "65%",
+      top: "35%",
+      left: "85%",
 
       href: "/uitgaandeLogistiek",
       info: {
@@ -76,8 +76,8 @@ export default function InteractiveImage() {
     },
     {
       id: 6,
-      top: "37%",
-      left: "31%",
+      top: "33%",
+      left: "10%",
 
       href: "/planning",
       info: {
@@ -88,8 +88,8 @@ export default function InteractiveImage() {
     },
     {
       id: 7,
-      top: "47%",
-      left: "31%",
+      top: "50%",
+      left: "10%",
 
       href: "/sales",
       info: {
@@ -100,8 +100,8 @@ export default function InteractiveImage() {
     },
     {
       id: 8,
-      top: "47%",
-      left: "47%",
+      top: "50%",
+      left: "40%",
 
       href: "/kwaliteit",
       info: {
@@ -112,8 +112,8 @@ export default function InteractiveImage() {
     },
     {
       id: 9,
-      top: "62%",
-      left: "47%",
+      top: "70%",
+      left: "40%",
 
       href: "/hr",
       info: {
@@ -125,8 +125,8 @@ export default function InteractiveImage() {
 
     {
       id: 10,
-      top: "63%",
-      left: "40%",
+      top: "70%",
+      left: "30%",
 
       href: "/administratie",
       info: {
@@ -137,8 +137,8 @@ export default function InteractiveImage() {
     },
     {
       id: 11,
-      top: "47%",
-      left: "37%",
+      top: "50%",
+      left: "30%",
 
       href: "/r&d",
       info: {
@@ -152,8 +152,10 @@ export default function InteractiveImage() {
   return (
     <div className="max-w-3xl relative">
       <Image
-        src="Schermafbeelding 2026-03-12 104528.png"
+        src="/Schermafbeelding 2026-03-12 104528.png"
         alt="Interactive"
+        width={2200}
+        height={1600}
         className="w-full h-auto rounded-lg "
       />
 
