@@ -137,7 +137,7 @@ export default function InteractiveImage() {
     },
     {
       id: 11,
-      top: "50%",
+      top: "48%",
       left: "30%",
 
       href: "/r&d",
@@ -147,16 +147,26 @@ export default function InteractiveImage() {
         "Feature 3": "En de derde beschrijving hier.",
       },
     },
+    {
+      id: 12,
+      top: "50%",
+      left: "54%",
+      href: "/it",
+      info: {
+        "Feature 1": "Beschrijving voor feature 1 specifiek voor productie.",
+        "Feature 2": "Uitleg over de tweede technologie.",
+        "Feature 3": "En de derde beschrijving hier.",
+      },
+    },
   ];
 
   return (
-    <div className="max-w-4xl relative">
+    <div className="max-w-4xl w-full relative aspect-[1076/511]">
       <Image
-        src="/Schermafbeelding 2026-03-12 104528.png"
+        src="/plattegrond.png"
         alt="Interactive"
-        width={2200}
-        height={0}
-        className="w-full h-auto rounded-lg "
+        fill
+        className="w-full h-auto rounded-lg"
       />
 
       {hotspots.map((spot) => (

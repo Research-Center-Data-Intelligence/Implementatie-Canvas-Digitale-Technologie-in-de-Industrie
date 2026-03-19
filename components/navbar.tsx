@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function NavBar() {
   return (
-    <nav className="w-full flex items-center border-b justify-center gap-6 py-4 bg-accent px-8">
+    <nav className="w-full flex items-center border-b justify-between gap-4 py-4 bg-accent px-8">
       <Link href="/">
         <Image
           src="/favicon.ico"
@@ -14,7 +14,9 @@ export default function NavBar() {
           className="w-20 h-20 contain-content rounded-lg "
         />
       </Link>
-
+      <Button>
+        <Link href="/it">IT</Link>
+      </Button>
       <Button>
         <Link href="/inkoop">Inkoop</Link>
       </Button>

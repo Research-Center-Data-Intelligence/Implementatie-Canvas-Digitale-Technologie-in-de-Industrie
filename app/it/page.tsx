@@ -1,6 +1,6 @@
 import HomeButton from "@/components/homeButton";
 
-export default function Planning() {
+export default function ItPage() {
   return (
     <div>
       <header className="flex items-center p-2 text-bold text-2xl border-b relative">
@@ -8,7 +8,7 @@ export default function Planning() {
           <HomeButton />
         </div>
 
-        <h1 className="flex-none text-center">Planning</h1>
+        <h1 className="flex-none text-center">IT</h1>
 
         <div className="flex-1 ">
           {/* Leeg, zodat 'Inkoop' in het midden blijft */}

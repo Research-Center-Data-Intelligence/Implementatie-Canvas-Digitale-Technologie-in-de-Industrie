@@ -22,6 +22,8 @@ export default function Inkoop() {
           </h2>
           <h3>Wat?</h3>
           <p></p>
+          <h3>Waarom?</h3>
+          <p></p>
           <h3>Hoe?</h3>
           <p></p>
         </div>
