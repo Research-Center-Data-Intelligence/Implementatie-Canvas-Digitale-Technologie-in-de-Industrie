@@ -105,7 +105,8 @@ export default function InteractiveImage() {
 
       href: "/kwaliteit",
       info: {
-        "Feature 1": "Beschrijving voor feature 1 specifiek voor productie.",
+        "Vision AI:":
+          "Visuele kwaliteitscontrole door AI-gestuurde beeldanalyse.",
         "Feature 2": "Uitleg over de tweede technologie.",
         "Feature 3": "En de derde beschrijving hier.",
       },
@@ -194,7 +195,7 @@ export default function InteractiveImage() {
               <div className="space-y-4">
                 {Object.entries(spot.info).map(([tech, description], i) => (
                   <div key={i} className="">
-                    <span className=" block">• {tech}</span>
+                    <span className=" block font-bold text-lg">• {tech}</span>
                     <p className="text-gray-700 mt-1 ml-3 text-md">
                       {description}
                     </p>
