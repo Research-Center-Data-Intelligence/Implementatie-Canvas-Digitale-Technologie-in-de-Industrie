@@ -1,12 +1,20 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
+import Image from "next/image";
 
 export default function NavBar() {
   return (
     <nav className="w-full flex items-center border-b justify-center gap-6 py-4 bg-accent px-8">
-      <Button>
-        <Link href="/">Home</Link>
-      </Button>
+      <Link href="/">
+        <Image
+          src="/favicon.ico"
+          alt="Interactive"
+          width={716}
+          height={715}
+          className="w-20 h-20 contain-content rounded-lg "
+        />
+      </Link>
+
       <Button>
         <Link href="/inkoop">Inkoop</Link>
       </Button>
