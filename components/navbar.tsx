@@ -48,7 +48,7 @@ export default function NavBar() {
         <Link href="/administratie">Administratie</Link>
       </Button>
       <Button>
-        <Link href="/sales">Verkoop logistiek</Link>
+        <Link href="/sales">Sales</Link>
       </Button>
     </nav>
   );
