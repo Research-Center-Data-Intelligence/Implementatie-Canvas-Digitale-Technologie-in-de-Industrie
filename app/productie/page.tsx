@@ -12,10 +12,10 @@ export default function ProductionPage() {
         <div className="flex-1 "></div>
       </header>
 
-      <main className="m-8">
-        <div className="pb-4">
-          <h2 className="text-2xl font-bold">Advanced manufacturing</h2>
-          <section className="flex flex-row items-center">
+      <main className="m-8 ">
+        <div className="flex flex-col gap-4 pb-4">
+          <h2 className="text-2xl font-bold pb-4">Advanced manufacturing</h2>
+          <section className="flex flex-row items-start">
             <div className="wrap-break-words flex-1 ">
               <h3 className="font-semibold text-lg">
                 Wat is Advanced manufacturing?
@@ -56,7 +56,7 @@ export default function ProductionPage() {
               />
             </div>
           </section>
-          <section className="flex flex-row-reverse items-center pb-4">
+          <section className="flex flex-row-reverse items-start pb-4">
             <div className="wrap-break-words flex-1 ">
               <h3 className="font-semibold text-lg">
                 Waarom Advanced manufacturing?
