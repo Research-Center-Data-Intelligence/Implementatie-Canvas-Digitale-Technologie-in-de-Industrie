@@ -10,11 +10,22 @@ export default function Home() {
         <p>
           Welkom bij <b>Smart Bikes</b>.
         </p>
-        <div className="w-2xl wrap-break-word">
-          Ontdek hoe ons fictieve fietsenbedrijf AI inzet binnen de
-          bedrijfsprocessen. Met concrete voorbeelden laten we zien hoe slimme
-          technologie de processen efficiënter maakt en de toekomst van
-          mobiliteit vormgeeft.
+        <div className="w-4xl wrap-break-word">
+          <p>
+            Hoe kunnen mkb-bedrijven digitale technologie inzetten om slimmer en
+            efficiënter te werken?
+          </p>
+          <p>
+            Op deze website ontdek je het aan de hand van een fictief
+            fietsenbedrijf. We bieden een helder, oriënterend overzicht van
+            digitale technologieën binnen productiebedrijven. Je ziet wat deze
+            technologieën zijn, waarom ze waardevol zijn en hoe je ze kunt
+            toepassen in je eigen processen.
+          </p>
+          <p>
+            Met concrete voorbeelden krijg je inzicht in hoe je stappen zet
+            richting een efficiëntere en toekomstbestendige bedrijfsvoering.
+          </p>
         </div>
         <InteractiveImage />
       </main>

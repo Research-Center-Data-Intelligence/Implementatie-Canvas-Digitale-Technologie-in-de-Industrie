@@ -14,42 +14,54 @@ export default function NavBar() {
           className="w-20 h-20 contain-content rounded-lg "
         />
       </Link>
-      <Button>
-        <Link href="/it">IT</Link>
-      </Button>
-      <Button>
-        <Link href="/inkoop">Inkoop</Link>
-      </Button>
-      <Button>
-        <Link href="/r&d">Research & Development</Link>
-      </Button>
-      <Button>
-        <Link href="/uitgaandeLogistiek">Uitgaande logistiek</Link>
-      </Button>
-      <Button>
-        <Link href="/planning">Planning</Link>
-      </Button>
-      <Button>
-        <Link href="/kwaliteit">Kwaliteit</Link>
-      </Button>
-      <Button>
-        <Link href="/customerService">Customer service</Link>
-      </Button>
-      <Button>
-        <Link href="/inkomendeLogistiek">Inkomende logistiek</Link>
-      </Button>
-      <Button>
-        <Link href="/productie">Productie</Link>
-      </Button>
-      <Button>
-        <Link href="/hr">HR</Link>
-      </Button>
-      <Button>
-        <Link href="/administratie">Administratie</Link>
-      </Button>
-      <Button>
-        <Link href="/sales">Sales</Link>
-      </Button>
+
+      <Link href="/administratie">
+        <Button className="cursor-pointer">Administratie </Button>
+      </Link>
+
+      <Link href="/customerService">
+        <Button className="cursor-pointer">Customer service</Button>
+      </Link>
+
+      <Link href="/hr">
+        <Button className="cursor-pointer">HR</Button>
+      </Link>
+
+      <Link href="/inkomendeLogistiek">
+        <Button className="cursor-pointer">Inkomende logistiek</Button>
+      </Link>
+
+      <Link href="/inkoop">
+        <Button className="cursor-pointer">Inkoop</Button>
+      </Link>
+
+      <Link href="/it">
+        <Button className="cursor-pointer">IT</Button>
+      </Link>
+
+      <Link href="/kwaliteit">
+        <Button className="cursor-pointer">Kwaliteit</Button>
+      </Link>
+
+      <Link href="/planning">
+        <Button className="cursor-pointer">Planning</Button>
+      </Link>
+
+      <Link href="/productie">
+        <Button className="cursor-pointer">Productie</Button>
+      </Link>
+
+      <Link href="/r&d">
+        <Button className="cursor-pointer">Research & Development</Button>
+      </Link>
+
+      <Link href="/sales">
+        <Button className="cursor-pointer">Sales</Button>
+      </Link>
+
+      <Link href="/uitgaandeLogistiek">
+        <Button className="cursor-pointer">Uitgaande logistiek</Button>
+      </Link>
     </nav>
   );
 }

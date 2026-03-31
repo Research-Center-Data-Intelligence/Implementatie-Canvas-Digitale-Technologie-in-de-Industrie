@@ -17,7 +17,8 @@ export default function Kwaliteit() {
       <main className="m-8">
         <div className="flex flex-col gap-4 pb-4">
           <h2 className="text-2xl font-bold">
-            Vision AI: visuele kwaliteitscontrole door AI-gestuurde beeldanalyse
+            1. Vision AI: visuele kwaliteitscontrole door AI-gestuurde
+            beeldanalyse
           </h2>
           <section className="flex flex-row items-start">
             <div className="wrap-break-words flex-1">
@@ -51,6 +52,15 @@ export default function Kwaliteit() {
                 ook leert van eerdere fouten en processen continu
                 verbetert.{" "}
               </p>
+              <p>
+                In de afbeelding rechts is te zien dat de AI bepaalde producten
+                analyseert met kleuren.
+              </p>
+              <ul className="list-disc list-inside ml-4 space-y-1">
+                <li>Groen betekent goed.</li>
+                <li>Oranje betekent menselijk laten checken</li>
+                <li>Rood betekent fout.</li>
+              </ul>
             </div>
             <div className="flex-1 relative h-100 w-full">
               <Image
@@ -109,7 +119,7 @@ export default function Kwaliteit() {
               dit als volgt worden aangepakt:
             </p>
             <div className="grid grid-cols-3 gap-6">
-              <div className="border-3 rounded-lg border-black">
+              <div className="border-3 rounded-lg border-black p-2">
                 <h4 className="font-semibold">
                   Stap 1: Bepaal kritische kwaliteitsmomenten
                 </h4>
@@ -120,7 +130,7 @@ export default function Kwaliteit() {
                   <li>Bevestiging van onderdelen</li>
                 </ul>
               </div>
-              <div className="border-3 rounded-lg border-black">
+              <div className="border-3 rounded-lg border-black p-2">
                 <h4 className="font-semibold">
                   Stap 2: Verzamel data via technologie
                 </h4>
@@ -135,7 +145,7 @@ export default function Kwaliteit() {
                   <li>procesparameters</li>
                 </ul>
               </div>
-              <div className="border-3 rounded-lg border-black">
+              <div className="border-3 rounded-lg border-black p-2">
                 <h4 className="font-semibold">Stap 3: Analyse met AI</h4>
                 <p>Gebruik AI-software om deze data te analyseren en:</p>
                 <ul className="list-disc list-inside ml-4 space-y-1">
@@ -144,7 +154,7 @@ export default function Kwaliteit() {
                   <li>Risico’s te voorspellen</li>
                 </ul>
               </div>
-              <div className="border-3 rounded-lg border-black">
+              <div className="border-3 rounded-lg border-black p-2">
                 <h4 className="font-semibold">
                   Stap 4: Integreer in het proces
                 </h4>
@@ -155,7 +165,7 @@ export default function Kwaliteit() {
                   <li>Operatoren realtime inzicht krijgen</li>
                 </ul>
               </div>
-              <div className="border-3 rounded-lg border-black">
+              <div className="border-3 rounded-lg border-black p-2">
                 <h4 className="font-semibold">Stap 5: Continu verbeteren</h4>
                 <p>
                   Gebruik de verzamelde data om processen structureel te
