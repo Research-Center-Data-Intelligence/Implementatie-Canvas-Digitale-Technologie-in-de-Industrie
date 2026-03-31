@@ -82,7 +82,7 @@ export default function ItPage() {
                 structureel worden opgelost in plaats van tijdelijk.
               </p>
             </div>
-            <div className="relative flex-1 h-100 w-auto">
+            <div className="relative flex-1 h-100 mr-8 w-auto">
               <Image
                 src="/aiops.png"
                 alt="IT 2"
