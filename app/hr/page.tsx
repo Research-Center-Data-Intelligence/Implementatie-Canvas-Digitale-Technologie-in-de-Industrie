@@ -7,6 +7,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HRPage() {
   const hrSteps = [
@@ -176,26 +177,21 @@ export default function HRPage() {
           </section>
           <section className="flex items-start flex-col pb-4">
             <h3 className="text-lg font-semibold">
-              Hoe implementeer je Vision AI binnen HR?
+              Hoe implementeer je Vision AI binnen HR?{" "}
             </h3>
+
             <StepCarousel data={hrSteps} />
           </section>
-        </div>
-        <div>
-          <h2 className="text-xl">
-            Feature 2: Uitleg over de tweede technologie.
-          </h2>
-          <h3>Wat?</h3>
-          <p></p>
-          <h3>Hoe?</h3>
-          <p></p>
-        </div>
-        <div>
-          <h2 className="text-xl">Feature 3: En de derde beschrijving hier.</h2>
-          <h3>Wat?</h3>
-          <p></p>
-          <h3>Hoe?</h3>
-          <p></p>
+          <section className="flex flex-row gap-4 items-center  pb-20">
+            <h3 className="font-semibold text-lg">Bron:</h3>
+
+            <Link
+              className="text-blue-500 hover:underline"
+              href=" https://doi.org/10.1016/j.tifs.2025.105050"
+            >
+              Lees meer...
+            </Link>
+          </section>
         </div>
       </main>
     </div>

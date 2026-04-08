@@ -7,6 +7,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ProductionPage() {
   const stappen1 = [
@@ -290,6 +291,15 @@ export default function ProductionPage() {
             </h3>
             <StepCarousel data={stappen1} />
           </section>
+          <section className="flex flex-row gap-4 items-center">
+            <h3 className="font-semibold text-lg">Bron:</h3>
+            <Link
+              href="https://asmedigitalcollection.asme.org/manufacturingscience/article/142/11/110804/1085487/Artificial-Intelligence-in-Advanced-Manufacturing?guestAccessKey="
+              className="text-blue-500 hover:underline"
+            >
+              Lees meer...
+            </Link>
+          </section>
         </div>
         <div className="flex flex-col gap-4 pb-4">
           <h2 className="text-2xl font-bold pb-4">
@@ -404,6 +414,15 @@ export default function ProductionPage() {
             </h3>
             <StepCarousel data={stappen2} />
           </section>
+          <section className="flex flex-row gap-4 items-center">
+            <h3 className="font-semibold text-lg">Bron:</h3>
+            <Link
+              className="text-blue-500 hover:underline"
+              href="https://doi.org/10.1038/s41598-023-38887-z"
+            >
+              Lees meer...
+            </Link>
+          </section>
         </div>
         <div className="flex flex-col gap-4 pb-4">
           <h2 className="text-2xl font-bold">3. Productie costing </h2>
@@ -473,6 +492,15 @@ export default function ProductionPage() {
             </p>
 
             <StepCarousel data={stappen3} />
+          </section>
+          <section className="flex flex-row gap-4 items-center pb-20">
+            <h3 className="font-semibold text-lg">Bron:</h3>
+            <Link
+              className="text-blue-500 hover:underline"
+              href="https://www.researchgate.net/profile/Abhishek-Sanakal-2/publication/392628138_Leveraging_AI_for_Predictive_Product_Costing_in_Manufacturing/links/684b7879d0be921dfef78d40/Leveraging-AI-for-Predictive-Product-Costing-in-Manufacturing.pdf"
+            >
+              Lees meer...
+            </Link>
           </section>
         </div>
       </main>

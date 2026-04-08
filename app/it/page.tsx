@@ -7,6 +7,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ItPage() {
   const aiOpsSteps = [
@@ -188,22 +189,15 @@ export default function ItPage() {
 
             <StepCarousel data={aiOpsSteps} />
           </section>
-        </div>
-        <div>
-          <h2 className="text-xl">
-            Feature 2: Uitleg over de tweede technologie.
-          </h2>
-          <h3>Wat?</h3>
-          <p></p>
-          <h3>Hoe?</h3>
-          <p></p>
-        </div>
-        <div>
-          <h2 className="text-xl">Feature 3: En de derde beschrijving hier.</h2>
-          <h3>Wat?</h3>
-          <p></p>
-          <h3>Hoe?</h3>
-          <p></p>
+          <section className="flex flex-row gap-4 items-center  pb-20">
+            <h3 className="font-semibold text-lg">Bron:</h3>
+            <Link
+              className="text-blue-500 hover:underline"
+              href="https://arxiv.org/pdf/2304.04661"
+            >
+              Lees meer...
+            </Link>
+          </section>
         </div>
       </main>
     </div>

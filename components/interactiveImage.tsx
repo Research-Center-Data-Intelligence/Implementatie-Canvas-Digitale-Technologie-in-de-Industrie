@@ -36,9 +36,8 @@ export default function InteractiveImage() {
 
       href: "/customerService",
       info: {
-        "Feature 1": "Beschrijving voor feature 1 specifiek voor productie.",
-        "Feature 2": "Uitleg over de tweede technologie.",
-        "Feature 3": "En de derde beschrijving hier.",
+        "AI Chatbot":
+          "Verbeter klantinteractie met AI-gestuurde chatbots voor snelle en gepersonaliseerde ondersteuning.",
       },
     },
     {
@@ -48,9 +47,8 @@ export default function InteractiveImage() {
 
       href: "/inkomendeLogistiek",
       info: {
-        "Feature 1": "Beschrijving voor feature 1 specifiek voor productie.",
-        "Feature 2": "Uitleg over de tweede technologie.",
-        "Feature 3": "En de derde beschrijving hier.",
+        "AI Inkomende Logistiek":
+          "Optimaliseer inkomende logistiek met AI-gestuurde vraagvoorspelling en voorraadbeheer.",
       },
     },
     {
@@ -60,9 +58,8 @@ export default function InteractiveImage() {
 
       href: "/inkoop",
       info: {
-        "Feature 1": "Beschrijving voor feature 1 specifiek voor productie.",
-        "Feature 2": "Uitleg over de tweede technologie.",
-        "Feature 3": "En de derde beschrijving hier.",
+        "AI Inkoop":
+          "Optimaliseer inkoopprocessen met AI-gestuurde vraagvoorspelling en leveranciersbeheer.",
       },
     },
     {
@@ -72,9 +69,8 @@ export default function InteractiveImage() {
 
       href: "/uitgaandeLogistiek",
       info: {
-        "Feature 1": "Beschrijving voor feature 1 specifiek voor productie.",
-        "Feature 2": "Uitleg over de tweede technologie.",
-        "Feature 3": "En de derde beschrijving hier.",
+        "SCO-AI (Predictive Analytics)":
+          "Optimaliseer distributie en logistiek met AI-gestuurde voorspellende analyses.",
       },
     },
     {
@@ -86,8 +82,6 @@ export default function InteractiveImage() {
       info: {
         "AI production planning":
           "optimaliseer productieplanning met AI-gestuurde voorspellingen en aanpassingen.",
-        "Feature 2": "Uitleg over de tweede technologie.",
-        "Feature 3": "En de derde beschrijving hier.",
       },
     },
     {
@@ -97,9 +91,7 @@ export default function InteractiveImage() {
 
       href: "/sales",
       info: {
-        "Feature 1": "Beschrijving voor feature 1 specifiek voor productie.",
-        "Feature 2": "Uitleg over de tweede technologie.",
-        "Feature 3": "En de derde beschrijving hier.",
+        "AI Sales": "Voorspel verkoopprijs met AI-gestuurde analyses.",
       },
     },
     {
@@ -111,8 +103,6 @@ export default function InteractiveImage() {
       info: {
         "Vision AI:":
           "Visuele kwaliteitscontrole door AI-gestuurde beeldanalyse.",
-        "Feature 2": "Uitleg over de tweede technologie.",
-        "Feature 3": "En de derde beschrijving hier.",
       },
     },
     {
@@ -124,8 +114,6 @@ export default function InteractiveImage() {
       info: {
         "Vision AI":
           "Monitor en analyseer werkplekomstandigheden en ergonomie met AI-gestuurde beeldanalyse.",
-        "Feature 2": "Uitleg over de tweede technologie.",
-        "Feature 3": "En de derde beschrijving hier.",
       },
     },
 
@@ -161,8 +149,6 @@ export default function InteractiveImage() {
       info: {
         "AI-OPS":
           "Automatiseer en optimaliseer IT-operationele processen met AI.",
-        "Feature 2": "Uitleg over de tweede technologie.",
-        "Feature 3": "En de derde beschrijving hier.",
       },
     },
   ];
