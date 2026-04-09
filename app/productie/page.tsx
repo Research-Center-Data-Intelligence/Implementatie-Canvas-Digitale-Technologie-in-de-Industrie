@@ -1,4 +1,4 @@
-import HomeButton from "@/components/homeButton";
+"use client";
 import {
   Carousel,
   CarouselContent,
@@ -6,10 +6,39 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { ArrowUp } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 
 export default function ProductionPage() {
+  const [showScrollTopButton, setShowScrollTopButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowScrollTopButton(true);
+      } else {
+        setShowScrollTopButton(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+
+    if (window.history.pushState) {
+      window.history.pushState(null, "", window.location.pathname);
+    }
+  };
   const stappen1 = [
     {
       titel: "Stap 1: Breng het productieproces en knelpunten in kaart",
@@ -196,46 +225,69 @@ export default function ProductionPage() {
   );
   return (
     <div>
-      <header className="flex items-center p-2 text-bold text-2xl border-b relative">
-        <div className="flex-1 flex justify-start">
-          <HomeButton />
+      <header className="relative flex items-center justify-center border-b overflow-hidden h-100">
+        <Image
+          src="/Banner prod.png"
+          alt="banner productie"
+          fill
+          priority
+          className="object-cover brightness-50"
+        />
+
+        <div className="relative z-10 flex flex-col items-center gap-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-white uppercase tracking-wider text-center">
+            Productie
+          </h1>
+
+          <div className="flex flex-wrap justify-center gap-4 px-4">
+            <a
+              href="#advanced-manufacturing"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-semibold transition-all shadow-lg border border-blue-400"
+            >
+              1. Advanced Manufacturing
+            </a>
+            <a
+              href="#predictive-maintenance"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-semibold transition-all shadow-lg border border-blue-400"
+            >
+              2. Predictive Maintenance
+            </a>
+            <a
+              href="#production-costing"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-semibold transition-all shadow-lg border border-blue-400"
+            >
+              3. Production Costing
+            </a>
+          </div>
         </div>
-        <h1 className="flex-none text-center">Productie</h1>
-        <div className="flex-1 "></div>
       </header>
 
-      <main className="m-8 flex flex-col gap-4">
+      <main className="m-12 mr-16 flex flex-col gap-4">
         <div className="flex flex-col gap-4 pb-4">
-          <h2 className="text-2xl font-bold pb-4">1. Advanced manufacturing</h2>
+          <h2 id="advanced-manufacturing" className="text-2xl font-bold pb-4">
+            1. Advanced manufacturing
+          </h2>
           <section className="flex flex-row items-start">
             <div className="wrap-break-words flex-1 ">
               <h3 className="font-semibold text-lg">
                 Wat is Advanced manufacturing?
               </h3>
               <p>
-                Het artikel beschrijft advanced manufacturing als een moderne
-                vorm van productie waarin geavanceerde technologieën,
-                automatisering en data-analyse centraal staan. Productiesystemen
-                worden steeds complexer door het gebruik van sensoren, robots en
-                digitale systemen, waardoor traditionele regel- en
-                modelgebaseerde methoden vaak tekortschieten. In deze context
-                wordt advanced manufacturing gezien als een geïntegreerd systeem
-                waarin fysieke processen en digitale informatie continu met
-                elkaar verbonden zijn om flexibiliteit, precisie en efficiëntie
-                te vergroten. Binnen dit kader laat het artikel zien dat
-                kunstmatige intelligentie (AI) een sleutelrol speelt. AI wordt
-                gebruikt om grote hoeveelheden productiegegevens te analyseren,
-                processen in real time te monitoren, productkwaliteit te bewaken
-                en onderhoud te voorspellen. Hierdoor kunnen productiesystemen
-                zich aanpassen aan veranderende omstandigheden en zelflerend
-                worden. AI fungeert daarmee niet als losse technologie, maar als
-                een essentieel hulpmiddel om de complexiteit van moderne
-                productiesystemen beheersbaar te maken. Bij SmartBikes kan dit
-                bijvoorbeeld worden toegepast door sensoren en systemen te
-                gebruiken die continu data verzamelen over de assemblagelijn. AI
-                analyseert deze gegevens om inzicht te krijgen in
-                productiesnelheid, machineprestaties en verstoringen in het
-                proces.
+                Advanced manufacturing is een moderne vorm van productie waarin
+                geavanceerde technologieën, automatisering en data-analyse
+                centraal staan. Door het gebruik van sensoren, robots en
+                digitale systemen worden productiesystemen steeds complexer,
+                waardoor traditionele methoden vaak tekortschieten. In deze
+                aanpak zijn fysieke processen en digitale informatie continu met
+                elkaar verbonden om flexibiliteit, precisie en efficiëntie te
+                verbeteren. Kunstmatige intelligentie speelt hierbij een
+                belangrijke rol door productiegegevens te analyseren, processen
+                in real time te monitoren, kwaliteit te bewaken en onderhoud te
+                voorspellen, waardoor systemen zich kunnen aanpassen aan
+                veranderingen en zelfs zelflerend worden. Bijvoorbeeld bij
+                SmartBikes, waar sensoren data verzamelen over de assemblagelijn
+                en AI deze analyseert om inzicht te krijgen in prestaties en
+                verstoringen.
               </p>
             </div>
 
@@ -302,7 +354,7 @@ export default function ProductionPage() {
           </section>
         </div>
         <div className="flex flex-col gap-4 pb-4">
-          <h2 className="text-2xl font-bold pb-4">
+          <h2 id="predictive-maintenance" className="text-2xl font-bold pb-4">
             2. AI predictive maintenance met IoT sensoren
           </h2>
           <section className="flex flex-row items-start pb-4">
@@ -425,7 +477,9 @@ export default function ProductionPage() {
           </section>
         </div>
         <div className="flex flex-col gap-4 pb-4">
-          <h2 className="text-2xl font-bold">3. Productie costing </h2>
+          <h2 id="production-costing" className="text-2xl font-bold">
+            3. Productie costing
+          </h2>
           <section className="flex flex-row items-start pb-4">
             <div className="wrap-break-word flex-1">
               <h3 className="text-lg font-semibold">
@@ -504,6 +558,15 @@ export default function ProductionPage() {
           </section>
         </div>
       </main>
+      {showScrollTopButton && (
+        <button
+          onClick={scrollToTop}
+          className="fixed top-8 right-1/2 cursor-pointer z-50 bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-2xl transition-all duration-300 ease-in-out transform hover:scale-110 flex items-center justify-center border-2 border-blue-400"
+          aria-label="Terug naar boven"
+        >
+          <ArrowUp className="h-6 w-6" />
+        </button>
+      )}
     </div>
   );
 }

@@ -1,4 +1,5 @@
-import HomeButton from "@/components/homeButton";
+"use client";
+
 import {
   Carousel,
   CarouselContent,
@@ -6,10 +7,41 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { ArrowUp } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function HRPage() {
+  const [showScrollTopButton, setShowScrollTopButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowScrollTopButton(true);
+      } else {
+        setShowScrollTopButton(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+
+    if (window.history.pushState) {
+      window.history.pushState(null, "", window.location.pathname);
+    }
+  };
+
   const hrSteps = [
     {
       titel: "Stap 1: Breng risico’s en gedrag in kaart",
@@ -59,6 +91,7 @@ export default function HRPage() {
       ],
     },
   ];
+
   const StepCarousel = ({ data }: { data: typeof hrSteps }) => (
     <div className="px-12 w-full">
       <Carousel opts={{ align: "start" }} className="w-full mx-auto">
@@ -92,26 +125,43 @@ export default function HRPage() {
       </Carousel>
     </div>
   );
+
   return (
     <div>
-      <header className="flex items-center p-2 text-bold text-2xl border-b relative">
-        <div className="flex-1 flex justify-start">
-          <HomeButton />
+      <header className="relative flex items-center justify-center border-b overflow-hidden h-100">
+        <Image
+          src="/Banner hr.png"
+          alt="banner human resources"
+          fill
+          priority
+          className="object-cover brightness-50"
+        />
+
+        <div className="relative z-10 flex flex-col items-center gap-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-white uppercase tracking-wider text-center">
+            Human Resources
+          </h1>
+
+          <div className="flex flex-wrap justify-center gap-4 px-4">
+            <a
+              href="#vision-ai"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-semibold transition-all shadow-lg border border-blue-400"
+            >
+              1. Vision AI
+            </a>
+          </div>
         </div>
-
-        <h1 className="flex-none text-center">Human Resources</h1>
-
-        <div className="flex-1"></div>
       </header>
 
-      <main className="m-8 flex flex-col gap-4">
+      <main className="m-12 mr-16 flex flex-col gap-4">
         <div className="flex flex-col gap-4 pb-4">
-          <h2 className="text-2xl font-bold">
+          <h2 id="vision-ai" className="text-2xl font-bold pb-4">
             1. Vision AI: visuele medewerkers veiligheid door AI gestuurde
             beeldanalyse
           </h2>
+
           <section className="flex flex-row items-start">
-            <div className="wrap-break-word flex-1">
+            <div className="wrap-break-words flex-1">
               <h3 className="font-semibold text-lg">Wat is Vision AI?</h3>
               <p>
                 De techniek betreft het gebruik van kunstmatige intelligentie
@@ -136,7 +186,8 @@ export default function HRPage() {
                 benadering van HR en werkvloerbeheer.
               </p>
             </div>
-            <div className="relative h-100 w-auto flex-1">
+
+            <div className="relative flex-1 h-100 w-auto">
               <Image
                 src="/HR 1.1.png"
                 alt="HR 1.1"
@@ -145,9 +196,10 @@ export default function HRPage() {
               />
             </div>
           </section>
-          <section className="flex flex-row-reverse items-start">
-            <div className="wrap-break-word flex-1">
-              <h3 className="text-lg font-semibold">Waarom Vision AI?</h3>
+
+          <section className="flex flex-row-reverse items-start pb-4">
+            <div className="wrap-break-words flex-1">
+              <h3 className="font-semibold text-lg">Waarom Vision AI?</h3>
               <p>
                 Het toepassen van AI binnen HR stelt organisaties in staat om
                 veiligheid, gedrag en medewerkerstevredenheid op een objectieve
@@ -173,27 +225,40 @@ export default function HRPage() {
                 verbeteringen als duurzame inzetbaarheid van medewerkers.
               </p>
             </div>
-            <div className="relative h-100 w-auto flex-1"></div>
+
+            <div className="flex-1 relative h-80 w-auto"></div>
           </section>
+
           <section className="flex items-start flex-col pb-4">
-            <h3 className="text-lg font-semibold">
-              Hoe implementeer je Vision AI binnen HR?{" "}
+            <h3 className="font-semibold pb-4 text-lg">
+              Hoe implementeer je Vision AI binnen HR?
             </h3>
 
             <StepCarousel data={hrSteps} />
           </section>
-          <section className="flex flex-row gap-4 items-center  pb-20">
+
+          <section className="flex flex-row gap-4 items-center pb-20">
             <h3 className="font-semibold text-lg">Bron:</h3>
 
             <Link
               className="text-blue-500 hover:underline"
-              href=" https://doi.org/10.1016/j.tifs.2025.105050"
+              href="https://doi.org/10.1016/j.tifs.2025.105050"
             >
               Lees meer...
             </Link>
           </section>
         </div>
       </main>
+
+      {showScrollTopButton && (
+        <button
+          onClick={scrollToTop}
+          className="fixed top-8 right-1/2 cursor-pointer z-50 bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-2xl transition-all duration-300 ease-in-out transform hover:scale-110 flex items-center justify-center border-2 border-blue-400"
+          aria-label="Terug naar boven"
+        >
+          <ArrowUp className="h-6 w-6" />
+        </button>
+      )}
     </div>
   );
 }

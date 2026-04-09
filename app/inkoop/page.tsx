@@ -176,14 +176,15 @@ export default function Inkoop() {
           </section>
 
           <section className="flex items-start flex-col">
-            <h3 className="font-semibold pb-4 text-lg">
+            <h3 className="font-semibold text-center w-full pb-4 text-lg">
               Hoe gebruik je AI Inkoop?
             </h3>
+            <h4 className="text-center w-full">Bekijk deze 5 stappen:</h4>
             <StepCarousel data={aiInkoopSteps} />
           </section>
 
           <section className="flex flex-row gap-4 items-center pb-20">
-            <h3 className="font-semibold text-lg">Bron:</h3>
+            <h3 className="font-semibold  text-lg">Bron:</h3>
             <Link
               className="text-blue-500 hover:underline"
               href="https://doi.org/10.56294/dm2024395"

@@ -122,8 +122,8 @@ export default function Planning() {
                 op veranderingen.{" "}
               </p>
               <p>
-                Binnen deze context introduceert het artikel reinforcement
-                learning (RL) als een geavanceerde AI-techniek voor
+                Binnen deze context wordt reinforcement learning (RL)
+                geintroduceerd als een geavanceerde AI-techniek voor
                 productieplanning. Reinforcement learning is een vorm van
                 kunstmatige intelligentie waarbij een systeem leert door
                 ervaring: het neemt beslissingen, ontvangt feedback over de

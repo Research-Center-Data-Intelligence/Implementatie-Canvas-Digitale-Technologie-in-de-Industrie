@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} h-screen w-screen  overflow-y-auto overflow-x-hidden antialiased`}
+        className={`${inter.className} h-screen w-screen   overflow-y-auto overflow-x-hidden antialiased`}
       >
         <nav>
           <NavBar />
