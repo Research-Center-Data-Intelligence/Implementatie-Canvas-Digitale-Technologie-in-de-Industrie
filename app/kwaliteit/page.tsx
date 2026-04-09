@@ -249,16 +249,11 @@ export default function Kwaliteit() {
           </section>
 
           <section className="flex items-start flex-col pb-4">
-            <h3 className="font-semibold pb-4 text-lg">
+            <h3 className="font-semibold text-center w-full pb-1 text-lg">
               Hoe gebruik je Vision AI?
             </h3>
 
-            <p className="max-w-1/2 pb-4">
-              De implementatie van Vison-AI binnen de kwaliteitsafdeling
-              verloopt stapsgewijs en begint met het identificeren van kritische
-              controlepunten in het productieproces. Voor het fietsenbedrijf kan
-              dit als volgt worden aangepakt:
-            </p>
+            <p className="text-center w-full pb-2">Bekijk deze 5 stappen:</p>
 
             <StepCarousel data={visionAIData} />
           </section>

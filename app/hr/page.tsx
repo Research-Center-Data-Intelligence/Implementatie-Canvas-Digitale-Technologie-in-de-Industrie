@@ -230,9 +230,10 @@ export default function HRPage() {
           </section>
 
           <section className="flex items-start flex-col pb-4">
-            <h3 className="font-semibold pb-4 text-lg">
+            <h3 className="font-semibold pb-1 text-center w-full text-lg">
               Hoe implementeer je Vision AI binnen HR?
             </h3>
+            <p className="text-center w-full pb-2">Bekijk deze 5 stappen:</p>
 
             <StepCarousel data={hrSteps} />
           </section>

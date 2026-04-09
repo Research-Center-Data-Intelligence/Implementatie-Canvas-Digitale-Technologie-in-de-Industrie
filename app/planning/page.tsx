@@ -240,9 +240,11 @@ export default function Planning() {
           </section>
 
           <section className="flex items-start flex-col pb-4">
-            <h3 className="font-semibold text-lg">
+            <h3 className="font-semibold text-center w-full pb-1 text-lg">
               Hoe gebruik je AI Productie Planning?
             </h3>
+
+            <p className="text-center w-full pb-2">Bekijk deze 5 stappen:</p>
             <StepCarousel data={planningSteps} />
           </section>
 

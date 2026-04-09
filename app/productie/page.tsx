@@ -337,10 +337,12 @@ export default function ProductionPage() {
               />
             </div>
           </section>
-          <section className="flex items-start flex-col">
-            <h3 className="font-semibold pb-4 text-lg">
+          <section className="flex items-start  flex-col">
+            <h3 className="font-semibold text-center w-full pb-1 text-lg">
               Hoe gebruik je Advanced manufacturing?
             </h3>
+            <p className="text-center w-full pb-2">Bekijk deze 5 stappen:</p>
+
             <StepCarousel data={stappen1} />
           </section>
           <section className="flex flex-row gap-4 items-center">
@@ -460,10 +462,11 @@ export default function ProductionPage() {
               />
             </div>
           </section>
-          <section className="flex flex-col items-start">
-            <h3 className="font-semibold pb-4 text-lg">
+          <section className="flex items-start  flex-col">
+            <h3 className="font-semibold text-center w-full pb-1 text-lg">
               Hoe gebruik je AI predictive maintenance?
             </h3>
+            <p className="text-center w-full pb-2">Bekijk deze 5 stappen:</p>
             <StepCarousel data={stappen2} />
           </section>
           <section className="flex flex-row gap-4 items-center">
@@ -534,16 +537,12 @@ export default function ProductionPage() {
               </p>
             </div>
           </section>
-          <section className="flex items-start flex-col pb-4">
-            <h3 className="font-semibold text-lg">
+          <section className="flex items-start  flex-col">
+            <h3 className="font-semibold text-center w-full pb-1 text-lg">
               Hoe gebruik je productie costing AI?
             </h3>
 
-            <p className="max-w-1/2 pb-4">
-              Voorspellende productkost AI implementeren verloopt stapsgewijs en
-              kan voor een productiebedrijf als SmartBikes als volgt worden
-              aangepakt:
-            </p>
+            <p className="text-center w-full pb-2">Bekijk deze 5 stappen:</p>
 
             <StepCarousel data={stappen3} />
           </section>
