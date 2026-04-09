@@ -128,7 +128,7 @@ export default function HRPage() {
 
   return (
     <div>
-      <header className="relative flex items-center justify-center border-b overflow-hidden h-100">
+      <header className="relative flex items-center justify-center border-b overflow-hidden h-80">
         <Image
           src="/Banner hr.png"
           alt="banner human resources"

@@ -1,4 +1,5 @@
-import HomeButton from "@/components/homeButton";
+"use client";
+
 import {
   Carousel,
   CarouselContent,
@@ -6,10 +7,41 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { ArrowUp } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function SalesPage() {
+  const [showScrollTopButton, setShowScrollTopButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowScrollTopButton(true);
+      } else {
+        setShowScrollTopButton(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+
+    if (window.history.pushState) {
+      window.history.pushState(null, "", window.location.pathname);
+    }
+  };
+
   const aiSalesSteps = [
     {
       titel: "Stap 1: Breng het verkoopproces in kaart",
@@ -97,19 +129,41 @@ export default function SalesPage() {
 
   return (
     <div>
-      <header className="flex items-center p-2 text-bold text-2xl border-b relative">
-        <div className="flex-1 flex justify-start">
-          <HomeButton />
+      {/* HEADER */}
+      <header className="relative flex items-center justify-center border-b overflow-hidden h-80">
+        <Image
+          src="/Banner sales.png"
+          alt="banner sales"
+          fill
+          priority
+          className="object-cover brightness-50"
+        />
+
+        <div className="relative z-10 flex flex-col items-center gap-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-white uppercase tracking-wider text-center">
+            Sales
+          </h1>
+
+          <div className="flex flex-wrap justify-center gap-4 px-4">
+            <a
+              href="#ai-sales"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-semibold transition-all shadow-lg border border-blue-400"
+            >
+              1. AI Sales
+            </a>
+          </div>
         </div>
-        <h1 className="flex-none text-center">Sales</h1>
-        <div className="flex-1 "></div>
       </header>
 
-      <main className="m-8">
+      {/* MAIN */}
+      <main className="m-12 mr-16 flex flex-col gap-4">
         <div className="flex flex-col gap-4 pb-4">
-          <h2 className="text-2xl font-bold pb-4">1. AI Sales</h2>
+          <h2 id="ai-sales" className="text-2xl font-bold pb-4">
+            1. AI Sales
+          </h2>
+
           <section className="flex flex-row items-start">
-            <div className="wrap-break-word flex-1">
+            <div className="wrap-break-words flex-1">
               <h3 className="text-lg font-semibold">Wat is AI Sales?</h3>
               <p>
                 Moderne verkoopprocessen kampen met dynamische
@@ -129,6 +183,7 @@ export default function SalesPage() {
                 acties van concurrenten.
               </p>
             </div>
+
             <div className="relative flex-1 h-100 w-auto">
               <Image
                 src="/sales-1.png"
@@ -140,7 +195,7 @@ export default function SalesPage() {
           </section>
 
           <section className="flex flex-row-reverse items-start pb-4">
-            <div className="wrap-break-word flex-1">
+            <div className="wrap-break-words flex-1">
               <h3 className="text-lg font-semibold">Waarom AI Sales?</h3>
               <p>
                 Het toepassen van AI binnen Sales helpt bedrijven om
@@ -162,7 +217,8 @@ export default function SalesPage() {
                 <li>De concurrentiepositie structureel verbetert</li>
               </ul>
             </div>
-            <div className="relative flex-1 h-100 mr-8 w-auto">
+
+            <div className="relative flex-1 h-100 w-auto">
               <Image
                 src="/sales-profit.png"
                 alt="AI Sales Voordelen"
@@ -182,13 +238,21 @@ export default function SalesPage() {
           <section className="flex flex-row gap-4 items-center pb-20">
             <h3 className="font-semibold text-lg">Bron:</h3>
             <Link className="text-blue-500 hover:underline" href="#">
-              {" "}
-              {/* TODO:Bron */}
               Lees meer...
             </Link>
           </section>
         </div>
       </main>
+
+      {showScrollTopButton && (
+        <button
+          onClick={scrollToTop}
+          className="fixed top-8 right-1/2 cursor-pointer z-50 bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-2xl transition-all duration-300 ease-in-out transform hover:scale-110 flex items-center justify-center border-2 border-blue-400"
+          aria-label="Terug naar boven"
+        >
+          <ArrowUp className="h-6 w-6" />
+        </button>
+      )}
     </div>
   );
 }

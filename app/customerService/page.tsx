@@ -129,7 +129,7 @@ export default function CustomerServicePage() {
 
   return (
     <div>
-      <header className="relative flex items-center justify-center border-b overflow-hidden h-100">
+      <header className="relative flex items-center justify-center border-b overflow-hidden h-80">
         <Image
           src="/Banner customer service.png"
           alt="banner Customer Service"

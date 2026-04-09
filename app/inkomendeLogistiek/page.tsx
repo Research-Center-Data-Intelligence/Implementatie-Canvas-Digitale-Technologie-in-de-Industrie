@@ -129,7 +129,7 @@ export default function InkomendeLogistiekPage() {
 
   return (
     <div>
-      <header className="relative flex items-center justify-center border-b overflow-hidden h-100">
+      <header className="relative flex items-center justify-center border-b overflow-hidden h-80">
         <Image
           src="/Banner inkomende logistiek.png"
           alt="banner inkomende logistiek"
