@@ -93,7 +93,62 @@ export default function Inkoop() {
     },
   ];
 
-  const StepCarousel = ({ data }: { data: typeof aiInkoopSteps }) => (
+  const nmtSteps = [
+    {
+      titel: "Stap 1: Analyseer het inkoopproces",
+      beschrijving: "Breng in kaart welke informatie wordt gebruikt, zoals:",
+      punten: [
+        "Offertes en prijsafspraken",
+        "Contracten en leveringsvoorwaarden",
+        "Productspecificaties en documentatie",
+      ],
+    },
+    {
+      titel: "Stap 2: Verzamel en structureer documentatie",
+      beschrijving: "Zorg dat relevante informatie beschikbaar is, zoals:",
+      punten: [
+        "Leveranciersdocumenten",
+        "Inkoopcontracten",
+        "Product- en materiaalspecificaties",
+      ],
+    },
+    {
+      titel: "Stap 3: Implementatie van AI (NMT)",
+      beschrijving: "Gebruik NMT om deze informatie te vertalen en:",
+      punten: [
+        "Offertes automatisch te vertalen",
+        "Contracten begrijpelijk te maken",
+        "Communicatie met leveranciers te ondersteunen",
+        "Inkoopbeslissingen te versnellen",
+      ],
+    },
+    {
+      titel: "Stap 4: Integratie in inkoopsystemen",
+      beschrijving: "Koppel het systeem aan inkoopprocessen zodat:",
+      punten: [
+        "Vertalingen automatisch plaatsvinden",
+        "Documenten centraal worden beheerd",
+        "Inkopers direct inzicht krijgen in informatie",
+        "Beslissingen efficiënter worden genomen",
+      ],
+    },
+    {
+      titel: "Stap 5: Continu verbeteren",
+      beschrijving: "Gebruik de inzichten om:",
+      punten: [
+        "Inkoopprocessen te optimaliseren",
+        "Leverancierscommunicatie te verbeteren",
+        "Fouten te verminderen",
+        "Vertalingen nauwkeuriger te maken",
+      ],
+    },
+  ];
+
+  const StepCarousel = ({
+    data,
+  }: {
+    data: typeof aiInkoopSteps | typeof nmtSteps;
+  }) => (
     <div className="px-12 w-full">
       <Carousel opts={{ align: "start" }} className="w-full mx-auto">
         <CarouselContent>
@@ -149,6 +204,12 @@ export default function Inkoop() {
               className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-semibold transition-all shadow-lg border border-blue-400"
             >
               1. AI Inkoop
+            </a>
+            <a
+              href="#nmt-inkoop"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-semibold transition-all shadow-lg border border-blue-400"
+            >
+              2. Neural Machine Translation (NMT)
             </a>
           </div>
         </div>
@@ -229,12 +290,10 @@ export default function Inkoop() {
             </div>
           </section>
 
-          <section className="flex items-start  flex-col">
-            <h3 className="font-semibold text-center w-full pb-1 text-lg">
+          <section className="flex items-start flex-col">
+            <h3 className="font-semibold pb-4 text-lg">
               Hoe gebruik je AI Inkoop?
             </h3>
-            <p className="text-center w-full pb-2">Bekijk deze 5 stappen:</p>
-
             <p className="max-w-1/2 pb-4">
               De implementatie van AI binnen inkoop verloopt stapsgewijs en
               begint met het in kaart brengen van knelpunten en relevante data.
@@ -248,6 +307,101 @@ export default function Inkoop() {
             <Link
               className="text-blue-500 hover:underline"
               href="https://doi.org/10.56294/dm2024395"
+            >
+              Lees meer...
+            </Link>
+          </section>
+        </div>
+
+        <div className="flex flex-col gap-4 pb-4">
+          <h2 id="nmt-inkoop" className="text-2xl font-bold pb-4">
+            2. Neural Machine Translation (NMT)
+          </h2>
+
+          <section className="flex flex-row items-start">
+            <div className="wrap-break-words flex-1">
+              <h3 className="text-lg font-semibold">Wat is de techniek?</h3>
+              <p>
+                Neural Machine Translation (NMT) is een AI-techniek die wordt
+                gebruikt om teksten en communicatie automatisch te vertalen naar
+                verschillende talen. Binnen de inkoopafdeling wordt deze
+                techniek ingezet om communicatie met internationale leveranciers
+                en inkoopdocumentatie toegankelijk te maken.
+              </p>
+              <p>
+                In een globale supply chain werken bedrijven samen met
+                leveranciers uit verschillende landen. Hierbij komen documenten
+                zoals offertes, contracten en productspecificaties in
+                verschillende talen voor. NMT maakt het mogelijk om deze
+                informatie automatisch te vertalen, zodat inkopers deze direct
+                kunnen begrijpen en gebruiken bij het nemen van beslissingen.
+              </p>
+              <p>
+                Bij SmartBikes kan deze techniek bijvoorbeeld worden toegepast
+                bij het beoordelen van offertes van buitenlandse leveranciers.
+                Productinformatie, prijsafspraken en leveringsvoorwaarden worden
+                automatisch vertaald, zodat inkopers snel inzicht krijgen in de
+                inhoud en verschillende opties kunnen vergelijken.
+              </p>
+            </div>
+
+            <div className="relative flex-1 h-100 w-auto"></div>
+          </section>
+
+          <section className="flex flex-row-reverse items-start pb-4">
+            <div className="wrap-break-words flex-1">
+              <h3 className="text-lg font-semibold">
+                Waarom zouden bedrijven dit moeten toepassen?
+              </h3>
+              <p>
+                Het toepassen van NMT binnen de inkoopafdeling maakt het
+                mogelijk om efficiënter en beter onderbouwde beslissingen te
+                nemen. Taalbarrières kunnen leiden tot misverstanden bij het
+                interpreteren van offertes of contracten, wat risico’s met zich
+                meebrengt.
+              </p>
+              <p>
+                Met AI-gedreven vertaling kunnen bedrijven informatie sneller
+                verwerken en beter vergelijken, waardoor het inkoopproces
+                versnelt en betrouwbaarder wordt. Daarnaast wordt het
+                eenvoudiger om samen te werken met internationale leveranciers.
+              </p>
+              <p>Voor SmartBikes betekent dit bijvoorbeeld dat:</p>
+              <ul className="list-disc list-inside ml-4 space-y-1">
+                <li>offertes sneller en beter kunnen worden beoordeeld</li>
+                <li>communicatie met leveranciers eenvoudiger verloopt</li>
+                <li>meer leveranciers wereldwijd kunnen worden benaderd</li>
+              </ul>
+              <p>
+                Daarnaast zorgt deze techniek ervoor dat inkopers minder
+                afhankelijk zijn van taalvaardigheden, wat flexibiliteit en
+                snelheid in het proces verhoogt.
+              </p>
+              <p>
+                Wel is het belangrijk om rekening te houden met beperkingen van
+                AI, zoals het minder goed interpreteren van juridische of
+                contractuele nuances. Daarom blijft controle bij belangrijke
+                documenten noodzakelijk.
+              </p>
+            </div>
+
+            <div className="relative flex-1 h-100 w-auto"></div>
+          </section>
+
+          <section className="flex items-start flex-col">
+            <h3 className="font-semibold text-center w-full pb-1 text-lg">
+              Hoe implementeer je NMT binnen inkoop?
+            </h3>
+            <p className="text-center w-full pb-2">Bekijk deze 5 stappen:</p>
+
+            <StepCarousel data={nmtSteps} />
+          </section>
+
+          <section className="flex flex-row gap-4 items-center pb-20">
+            <h3 className="font-semibold text-lg">Bron:</h3>
+            <Link
+              href="https://egarp.lt/index.php/aghel/article/view/105/108"
+              className="text-blue-500 hover:underline"
             >
               Lees meer...
             </Link>

@@ -93,7 +93,62 @@ export default function InkomendeLogistiekPage() {
     },
   ];
 
-  const StepCarousel = ({ data }: { data: typeof logistiekSteps }) => (
+  const nmtSteps = [
+    {
+      titel: "Stap 1: Analyseer inkomende logistieke processen",
+      beschrijving: "Breng in kaart welke informatie wordt verwerkt, zoals:",
+      punten: [
+        "Leveringsdocumenten en pakbonnen",
+        "Product- en materiaalspecificaties",
+        "Communicatie met leveranciers",
+      ],
+    },
+    {
+      titel: "Stap 2: Verzamel en structureer documentatie",
+      beschrijving: "Zorg dat relevante informatie beschikbaar is, zoals:",
+      punten: [
+        "Leveranciersdocumenten",
+        "Transport- en douanedocumentatie",
+        "Productinformatie en specificaties",
+      ],
+    },
+    {
+      titel: "Stap 3: Implementatie van AI (NMT)",
+      beschrijving: "Gebruik NMT om deze informatie te vertalen en:",
+      punten: [
+        "Documenten automatisch toegankelijk te maken",
+        "Leveringsinformatie snel te begrijpen",
+        "Communicatie met leveranciers te ondersteunen",
+        "Fouten bij verwerking te verminderen",
+      ],
+    },
+    {
+      titel: "Stap 4: Integratie in logistieke systemen",
+      beschrijving: "Koppel het systeem aan logistieke processen zodat:",
+      punten: [
+        "Vertalingen automatisch plaatsvinden bij ontvangst",
+        "Documenten centraal worden opgeslagen",
+        "Medewerkers direct inzicht krijgen in leveringen",
+        "Verwerking van goederen efficiënter verloopt",
+      ],
+    },
+    {
+      titel: "Stap 5: Continu verbeteren",
+      beschrijving: "Gebruik de inzichten om:",
+      punten: [
+        "Logistieke processen te optimaliseren",
+        "Fouten verder te verminderen",
+        "Communicatie te verbeteren",
+        "Vertalingen nauwkeuriger te maken",
+      ],
+    },
+  ];
+
+  const StepCarousel = ({
+    data,
+  }: {
+    data: typeof logistiekSteps | typeof nmtSteps;
+  }) => (
     <div className="px-12 w-full">
       <Carousel opts={{ align: "start" }} className="w-full mx-auto">
         <CarouselContent>
@@ -149,6 +204,12 @@ export default function InkomendeLogistiekPage() {
               className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-semibold transition-all shadow-lg border border-blue-400"
             >
               1. AI Inkomende Logistiek
+            </a>
+            <a
+              href="#nmt-logistiek"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-semibold transition-all shadow-lg border border-blue-400"
+            >
+              2. Neural Machine Translation (NMT)
             </a>
           </div>
         </div>
@@ -230,7 +291,7 @@ export default function InkomendeLogistiekPage() {
             </div>
           </section>
 
-          <section className="flex items-start  flex-col">
+          <section className="flex items-start flex-col">
             <h3 className="font-semibold text-center w-full pb-1 text-lg">
               Hoe gebruik je AI Inkomende Logistiek?
             </h3>
@@ -244,6 +305,103 @@ export default function InkomendeLogistiekPage() {
             <Link
               className="text-blue-500 hover:underline"
               href="https://doi.org/10.63332/joph.v5i12.3860"
+            >
+              Lees meer...
+            </Link>
+          </section>
+        </div>
+
+        <div className="flex flex-col gap-4 pb-4">
+          <h2 id="nmt-logistiek" className="text-2xl font-bold pb-4">
+            2. Neural Machine Translation (NMT)
+          </h2>
+
+          <section className="flex flex-row items-start">
+            <div className="wrap-break-words flex-1">
+              <h3 className="text-lg font-semibold">Wat is de techniek?</h3>
+              <p>
+                Neural Machine Translation (NMT) is een AI-techniek die wordt
+                gebruikt om teksten en communicatie automatisch te vertalen naar
+                verschillende talen. Binnen de inkomende logistiek wordt deze
+                techniek ingezet om communicatie met internationale leveranciers
+                en logistieke documentatie toegankelijk te maken.
+              </p>
+              <p>
+                In een globale supply chain werken productiebedrijven vaak samen
+                met leveranciers uit verschillende landen. Hierbij komen
+                documenten zoals pakbonnen, leveringsspecificaties en
+                transportdocumenten in verschillende talen voor. NMT maakt het
+                mogelijk om deze informatie automatisch te vertalen, zodat deze
+                direct begrijpelijk is voor medewerkers binnen het bedrijf.
+              </p>
+              <p>
+                Bij SmartBikes kan deze techniek bijvoorbeeld worden toegepast
+                bij het ontvangen van onderdelen van buitenlandse leveranciers.
+                Documenten zoals leveringsbonnen, productbeschrijvingen en
+                specificaties worden automatisch vertaald, zodat
+                magazijnmedewerkers en planners direct inzicht hebben in de
+                inhoud en verwerking van de goederen.
+              </p>
+            </div>
+
+            <div className="relative flex-1 h-100 w-auto"></div>
+          </section>
+
+          <section className="flex flex-row-reverse items-start pb-4">
+            <div className="wrap-break-words flex-1">
+              <h3 className="text-lg font-semibold">
+                Waarom zouden bedrijven dit moeten toepassen?
+              </h3>
+              <p>
+                Het toepassen van NMT binnen de inkomende logistiek maakt het
+                mogelijk om efficiënter te werken en fouten te verminderen.
+                Taalbarrières kunnen leiden tot misverstanden bij het verwerken
+                van leveringen, wat kan resulteren in vertragingen of fouten in
+                het magazijn.
+              </p>
+              <p>
+                Met AI-gedreven vertaling kunnen bedrijven deze problemen
+                voorkomen door informatie direct beschikbaar te maken in de
+                juiste taal. Hierdoor wordt het verwerken van inkomende goederen
+                sneller en betrouwbaarder.
+              </p>
+              <p>Voor SmartBikes betekent dit bijvoorbeeld dat:</p>
+              <ul className="list-disc list-inside ml-4 space-y-1">
+                <li>leveringen sneller verwerkt kunnen worden</li>
+                <li>fouten bij ontvangst en registratie worden verminderd</li>
+                <li>
+                  communicatie met internationale leveranciers eenvoudiger wordt
+                </li>
+              </ul>
+              <p>
+                Daarnaast zorgt deze techniek ervoor dat medewerkers minder
+                afhankelijk zijn van specifieke taalvaardigheden, wat de
+                flexibiliteit binnen het logistieke proces vergroot.
+              </p>
+              <p>
+                Wel is het belangrijk om rekening te houden met beperkingen van
+                AI, zoals het minder goed begrijpen van specifieke technische
+                termen. Daarom blijft controle bij belangrijke documenten
+                noodzakelijk.
+              </p>
+            </div>
+
+            <div className="relative flex-1 h-100 w-auto"></div>
+          </section>
+
+          <section className="flex items-start flex-col">
+            <h3 className="font-semibold text-center w-full pb-1 text-lg">
+              Hoe implementeer je NMT binnen inkomende logistiek?
+            </h3>
+            <p className="text-center w-full pb-2">Bekijk deze 5 stappen:</p>
+
+            <StepCarousel data={nmtSteps} />
+          </section>
+          <section className="flex flex-row gap-4 items-center pb-20">
+            <h3 className="font-semibold text-lg">Bron:</h3>
+            <Link
+              href=" https://egarp.lt/index.php/aghel/article/view/105/108"
+              className="text-blue-500 hover:underline"
             >
               Lees meer...
             </Link>

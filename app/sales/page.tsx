@@ -264,7 +264,7 @@ export default function SalesPage() {
               href="#nmt-sales"
               className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-semibold transition-all shadow-lg border border-blue-400"
             >
-              3. NMT
+              3. Neural Machine Translation (NMT)
             </a>
           </div>
         </div>
@@ -351,7 +351,7 @@ export default function SalesPage() {
             <StepCarousel data={aiSalesSteps} />
           </section>
 
-          <section className="flex flex-row gap-4 items-center pb-20">
+          <section className="flex flex-row gap-4 items-center pb-4">
             <h3 className="font-semibold text-lg">Bron:</h3>
             <Link className="text-blue-500 hover:underline" href="#">
               Lees meer...

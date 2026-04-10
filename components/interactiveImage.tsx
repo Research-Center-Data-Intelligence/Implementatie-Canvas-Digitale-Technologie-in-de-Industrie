@@ -36,6 +36,8 @@ export default function InteractiveImage() {
       info: {
         "AI Chatbot":
           "Verbeter klantinteractie met AI-gestuurde chatbots voor snelle en gepersonaliseerde ondersteuning.",
+        "Neural Machine Translation (NMT)":
+          "Automatiseer vertalingen en communicatie met AI-gestuurde neurale machinale vertaling.",
       },
     },
     {
@@ -80,6 +82,8 @@ export default function InteractiveImage() {
       info: {
         "AI production planning":
           "optimaliseer productieplanning met AI-gestuurde voorspellingen en aanpassingen.",
+        "SCO-AI (Predictive Analytics)":
+          "Optimaliseer productieplanning met AI-gestuurde voorspellende analyses.",
       },
     },
     {
@@ -90,6 +94,10 @@ export default function InteractiveImage() {
       href: "/sales",
       info: {
         "AI Sales": "Voorspel verkoopprijs met AI-gestuurde analyses.",
+        "Product Assistant":
+          "AI-gestuurde productassistent voor gepersonaliseerde aanbevelingen en ondersteuning.",
+        "Neural Machine Translation (NMT)":
+          "Automatiseer vertalingen en communicatie met AI-gestuurde neurale machinale vertaling.",
       },
     },
     {
@@ -112,6 +120,10 @@ export default function InteractiveImage() {
       info: {
         "Vision AI":
           "Monitor en analyseer werkplekomstandigheden en ergonomie met AI-gestuurde beeldanalyse.",
+        "AI Training":
+          "AI-gestuurde training en ontwikkeling van werknemers voor verbeterde vaardigheden en prestaties.",
+        "Neural Machine Translation (NMT)":
+          "Automatiseer vertalingen en communicatie met AI-gestuurde neurale machinale vertaling.",
       },
     },
 
@@ -136,6 +148,8 @@ export default function InteractiveImage() {
       info: {
         "Generative Design (AI-gedreven productontwikkeling)":
           "AI-gestuurde generatieve ontwerptechnieken voor innovatieve productontwikkeling.",
+        "Neural Machine Translation (NMT)":
+          "Automatiseer vertalingen en communicatie met AI-gestuurde neurale machinale vertaling.",
       },
     },
     {

@@ -207,7 +207,7 @@ export default function CustomerServicePage() {
               href="#nmt"
               className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-semibold transition-all shadow-lg border border-blue-400 cursor-pointer"
             >
-              2. Neural Machine Translation
+              2. Neural Machine Translation (NMT)
             </a>
           </div>
         </div>
