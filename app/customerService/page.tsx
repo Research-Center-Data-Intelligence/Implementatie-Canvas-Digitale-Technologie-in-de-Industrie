@@ -8,7 +8,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { ArrowUp } from "lucide-react";
-import Image from "next/image";
+import Image from "@/components/next-image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
