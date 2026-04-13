@@ -2,7 +2,7 @@ import NextImage, { ImageProps } from "next/image";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
-export default function Image({ src, ...props }: ImageProps) {
+export default function BasePathImage({ src, ...props }: ImageProps) {
   const resolvedSrc =
     typeof src === "string" && src.startsWith("/")
       ? `${basePath}${src}`
