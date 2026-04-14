@@ -423,6 +423,15 @@ export default function SalesPage() {
 
             <StepCarousel data={productAssistantSteps} />
           </section>
+          <section className="flex flex-row gap-4 items-center">
+            <h3 className="font-semibold text-lg">Bron:</h3>
+            <Link
+              href="https://www.youweagency.nl/webwinkelvakdagen/ai-toepassingen"
+              className="text-blue-500 hover:underline"
+            >
+              Lees meer...
+            </Link>
+          </section>
         </div>
 
         <div className="flex flex-col gap-4 pb-4">
