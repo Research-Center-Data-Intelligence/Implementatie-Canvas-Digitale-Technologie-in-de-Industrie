@@ -416,7 +416,14 @@ export default function HRPage() {
               </p>
             </div>
 
-            <div className="relative flex-1 h-100 w-auto"></div>
+            <div className="relative flex-1 h-100 w-auto">
+              <Image
+                src="/HR AI Training 1.png"
+                alt="AI Training HR 1"
+                fill
+                className="object-contain"
+              />
+            </div>
           </section>
 
           <section className="flex flex-row-reverse items-start pb-4">
@@ -468,8 +475,6 @@ export default function HRPage() {
                 waarbij medewerkers continu worden ondersteund en verbeterd.
               </p>
             </div>
-
-            <div className="relative flex-1 h-100 w-auto"></div>
           </section>
 
           <section className="flex items-start flex-col pb-4">
@@ -559,8 +564,6 @@ export default function HRPage() {
                 documenten noodzakelijk.
               </p>
             </div>
-
-            <div className="relative flex-1 h-100 w-auto"></div>
           </section>
 
           <section className="flex items-start flex-col pb-4">

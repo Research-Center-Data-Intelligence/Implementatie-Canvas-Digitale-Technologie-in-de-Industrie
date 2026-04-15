@@ -390,8 +390,6 @@ export default function UitgaandeLogistiekPage() {
                 kritische documenten noodzakelijk.
               </p>
             </div>
-
-            <div className="relative flex-1 h-100 w-auto"></div>
           </section>
 
           <section className="flex items-start flex-col">
