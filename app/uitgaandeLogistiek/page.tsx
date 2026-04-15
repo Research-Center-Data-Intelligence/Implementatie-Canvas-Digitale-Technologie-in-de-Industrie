@@ -342,7 +342,14 @@ export default function UitgaandeLogistiekPage() {
               </p>
             </div>
 
-            <div className="relative flex-1 h-100 w-auto"></div>
+            <div className="relative flex-1 h-100 w-auto">
+              <Image
+                src="/NMT Uitgaande Logistiek 1.png"
+                alt="NMT Uitgaande Logistiek Concept"
+                fill
+                className="object-contain"
+              />
+            </div>
           </section>
 
           <section className="flex flex-row-reverse items-start pb-4">

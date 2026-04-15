@@ -239,7 +239,7 @@ export default function CustomerServicePage() {
 
             <div className="relative flex-1 h-100 w-auto">
               <Image
-                src="/chatbot-tech.png"
+                src="/Chatbot 1.png"
                 alt="AI Chatbot Technologie"
                 fill
                 className="object-contain"
@@ -271,10 +271,10 @@ export default function CustomerServicePage() {
             </div>
             <div className="flex-1 relative h-80 w-auto">
               <Image
-                src="/chatbot-benefits.png"
+                src="/Chatbot 2.png"
                 alt="Voordelen van AI Chatbots"
                 fill
-                className="object-contain"
+                className="object-contain "
               />
             </div>
           </section>
@@ -331,7 +331,14 @@ export default function CustomerServicePage() {
               </p>
             </div>
 
-            <div className="relative flex-1 h-100 w-auto"></div>
+            <div className="relative flex-1 h-100 w-auto">
+              <Image
+                src="/NMT Customer Service 1.png"
+                alt="Neural Machine Translation Technologie"
+                fill
+                className="object-contain"
+              />
+            </div>
           </section>
 
           <section className="flex flex-row-reverse items-start pb-4">

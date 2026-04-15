@@ -140,9 +140,10 @@ export default function InteractiveImage() {
 
       href: "/administratie",
       info: {
-        "Feature 1": "Beschrijving voor feature 1 specifiek voor productie.",
-        "Feature 2": "Uitleg over de tweede technologie.",
-        "Feature 3": "En de derde beschrijving hier.",
+        Consistenties:
+          "AI-gestuurde consistentiecontrole voor nauwkeurige en betrouwbare gegevensverwerking.",
+        "AI-gestuurde datakwaliteit assistent":
+          "Verbeter datakwaliteit met een AI-gestuurde assistent voor gegevensvalidatie en -correctie.",
       },
     },
     {

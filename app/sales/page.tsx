@@ -465,7 +465,14 @@ export default function SalesPage() {
               </p>
             </div>
 
-            <div className="relative flex-1 h-100 w-auto"></div>
+            <div className="relative flex-1 h-100 w-auto">
+              <Image
+                src="/NMT Sales 1.png"
+                alt="NMT Sales Concept"
+                fill
+                className="object-contain"
+              />
+            </div>
           </section>
 
           <section className="flex flex-row-reverse items-start pb-4">

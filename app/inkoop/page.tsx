@@ -345,7 +345,14 @@ export default function Inkoop() {
               </p>
             </div>
 
-            <div className="relative flex-1 h-100 w-auto"></div>
+            <div className="relative flex-1 h-100 w-auto">
+              <Image
+                src="/NMT Inkoop 1.png"
+                alt="NMT Inkoop Concept"
+                fill
+                className="object-contain"
+              />
+            </div>
           </section>
 
           <section className="flex flex-row-reverse items-start pb-4">
