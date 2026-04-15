@@ -207,7 +207,6 @@ export default function ItPage() {
       </header>
 
       <main className="m-16 flex flex-col gap-16">
-        {/* Sectie 1: AI-OPS */}
         <div id="ai-ops" className="flex flex-col gap-4 pb-8 border-b">
           <h2 className="text-2xl font-bold pb-4">1. AI-OPS</h2>
 
@@ -272,7 +271,6 @@ export default function ItPage() {
           </section>
         </div>
 
-        {/* Sectie 2: Datakwaliteit Monitor */}
         <div id="datakwaliteit" className="flex flex-col gap-4 pb-8">
           <h2 className="text-2xl font-bold pb-4">2. Datakwaliteit Monitor</h2>
 

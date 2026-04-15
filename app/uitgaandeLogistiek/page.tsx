@@ -400,6 +400,15 @@ export default function UitgaandeLogistiekPage() {
 
             <StepCarousel data={nmtSteps} />
           </section>
+          <section className="flex flex-row gap-4 items-center pb-20">
+            <h3 className="font-semibold text-lg">Bron:</h3>
+            <Link
+              href=" https://egarp.lt/index.php/aghel/article/view/105/108"
+              className="text-blue-500 hover:underline"
+            >
+              Lees meer...
+            </Link>
+          </section>
         </div>
       </main>
 

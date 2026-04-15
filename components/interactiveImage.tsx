@@ -167,6 +167,8 @@ export default function InteractiveImage() {
       info: {
         "AI-OPS":
           "Automatiseer en optimaliseer IT-operationele processen met AI.",
+        "Datakwaliteit Monitor":
+          "Controleer en verbeter de kwaliteit van gegevens met AI-gestuurde tools.",
       },
     },
   ];
@@ -195,7 +197,6 @@ export default function InteractiveImage() {
             className="block w-6 h-6 bg-red-500 border-2 border-white rounded-full cursor-pointer z-10 transition-transform hover:scale-125 shadow-md"
           />
 
-          {/* Pop-over */}
           <div className="absolute left-8 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 z-50 transition pointer-events-none w-96">
             <div className="bg-white shadow-xl rounded-lg p-4 border border-gray-100">
               <h2 className="font-bold mb-3 text-lg text-gray-800 border-b pb-1">

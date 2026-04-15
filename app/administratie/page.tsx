@@ -174,7 +174,6 @@ export default function AdministrationPage() {
       </header>
 
       <main className="m-16 flex flex-col gap-12">
-        {/* Sectie 1: Consistenties */}
         <div
           id="consistenties"
           className="flex flex-col gap-4 pb-4 border-b border-gray-200"
@@ -244,9 +243,17 @@ export default function AdministrationPage() {
             <p className="text-center w-full pb-2">Bekijk deze 5 stappen:</p>
             <StepCarousel data={stepsConsistency} />
           </section>
+          <section className="flex flex-row gap-4 items-center pb-20">
+            <h3 className="font-semibold text-lg">Bron:</h3>
+            <Link
+              href="https://www.youweagency.nl/webwinkelvakdagen/ai-toepassingen"
+              className="text-blue-500 hover:underline"
+            >
+              Lees meer...
+            </Link>
+          </section>
         </div>
 
-        {/* Sectie 2: AI-gestuurde Datakwaliteit Assistent */}
         <div id="datakwaliteit" className="flex flex-col gap-4 pb-4">
           <h2 className="text-2xl font-bold pb-4">
             2. AI-gestuurde Datakwaliteit Assistent
