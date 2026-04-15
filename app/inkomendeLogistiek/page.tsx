@@ -344,7 +344,14 @@ export default function InkomendeLogistiekPage() {
               </p>
             </div>
 
-            <div className="relative flex-1 h-100 w-auto"></div>
+            <div className="relative flex-1 h-100 w-auto">
+              <Image
+                src="/NMT Inkomende Logistiek 1.png"
+                alt="Voordelen van NMT Logistiek"
+                fill
+                className="object-contain"
+              />
+            </div>
           </section>
 
           <section className="flex flex-row-reverse items-start pb-4">
@@ -384,15 +391,6 @@ export default function InkomendeLogistiekPage() {
                 termen. Daarom blijft controle bij belangrijke documenten
                 noodzakelijk.
               </p>
-            </div>
-
-            <div className="relative flex-1 h-100 w-auto">
-              <Image
-                src="/NMT Inkomende Logistiek 1.png"
-                alt="Voordelen van NMT Logistiek"
-                fill
-                className="object-contain"
-              />
             </div>
           </section>
 
