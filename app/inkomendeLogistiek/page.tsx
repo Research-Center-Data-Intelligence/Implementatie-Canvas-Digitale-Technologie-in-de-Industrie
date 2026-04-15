@@ -189,7 +189,6 @@ export default function InkomendeLogistiekPage() {
           src="/Banner inkomende logistiek.png"
           alt="banner inkomende logistiek"
           fill
-          priority
           className="object-cover brightness-50"
         />
 
@@ -203,7 +202,7 @@ export default function InkomendeLogistiekPage() {
               href="#ai-inkomende-logistiek"
               className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-semibold transition-all shadow-lg border border-blue-400"
             >
-              1. AI Inkomende Logistiek
+              1. Predictive Inbound Logistics AI
             </a>
             <a
               href="#nmt-logistiek"
@@ -218,13 +217,13 @@ export default function InkomendeLogistiekPage() {
       <main className="m-16 flex flex-col gap-4">
         <div className="flex flex-col gap-4 pb-4">
           <h2 id="ai-inkomende-logistiek" className="text-2xl font-bold pb-4">
-            1. AI Inkomende Logistiek
+            1. Predictive Inbound Logistics AI
           </h2>
 
           <section className="flex flex-row items-start">
             <div className="wrap-break-words flex-1">
               <h3 className="text-lg font-semibold">
-                Wat is AI Inkomende Logistiek?
+                Wat is Predictive Inbound Logistics AI?
               </h3>
               <p>
                 Inkomende logistiek omvat het ontvangen, opslaan en beheren van
@@ -247,7 +246,7 @@ export default function InkomendeLogistiekPage() {
 
             <div className="relative flex-1 h-100 w-auto">
               <Image
-                src="/logistiek-1.png"
+                src="/Inkomende Logistiek 1.png"
                 alt="AI Inkomende Logistiek Concept"
                 fill
                 className="object-contain"
@@ -258,7 +257,7 @@ export default function InkomendeLogistiekPage() {
           <section className="flex flex-row-reverse items-start pb-4">
             <div className="wrap-break-words flex-1">
               <h3 className="text-lg font-semibold">
-                Waarom AI in de logistiek?
+                Waarom Predictive Inbound Logistics AI?
               </h3>
               <p>
                 Het toepassen van AI helpt bedrijven om proactief om te gaan met
@@ -283,7 +282,7 @@ export default function InkomendeLogistiekPage() {
 
             <div className="relative flex-1 h-100 w-auto">
               <Image
-                src="/logistiek-efficiency.png"
+                src="/Inkomende Logistiek 2.png"
                 alt="Voordelen van AI Logistiek"
                 fill
                 className="object-contain"
@@ -293,7 +292,7 @@ export default function InkomendeLogistiekPage() {
 
           <section className="flex items-start flex-col">
             <h3 className="font-semibold text-center w-full pb-1 text-lg">
-              Hoe gebruik je AI Inkomende Logistiek?
+              Hoe gebruik je Predictive Inbound Logistics AI?
             </h3>
             <p className="text-center w-full pb-2">Bekijk deze 5 stappen:</p>
 

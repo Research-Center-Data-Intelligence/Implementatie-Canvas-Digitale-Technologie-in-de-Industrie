@@ -300,7 +300,7 @@ export default function SalesPage() {
 
             <div className="relative flex-1 h-100 w-auto">
               <Image
-                src="/sales-1.png"
+                src="/Sales 1.png"
                 alt="AI Sales Concept"
                 fill
                 className="object-contain"
@@ -334,7 +334,7 @@ export default function SalesPage() {
 
             <div className="relative flex-1 h-100 w-auto">
               <Image
-                src="/sales-profit.png"
+                src="/Sales 1.2.png"
                 alt="AI Sales Voordelen"
                 fill
                 className="object-contain"

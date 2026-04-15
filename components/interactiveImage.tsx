@@ -47,7 +47,7 @@ export default function InteractiveImage() {
 
       href: "/inkomendeLogistiek",
       info: {
-        "AI Inkomende Logistiek":
+        "Predictive Inbound Logistics AI":
           "Optimaliseer inkomende logistiek met AI-gestuurde vraagvoorspelling en voorraadbeheer.",
         "Neural Machine Translation (NMT)":
           "Automatiseer vertalingen en communicatie met AI-gestuurde neurale machinale vertaling.",
@@ -60,7 +60,7 @@ export default function InteractiveImage() {
 
       href: "/inkoop",
       info: {
-        "AI Inkoop":
+        "AI-gestuurde inkoopplanning":
           "Optimaliseer inkoopprocessen met AI-gestuurde vraagvoorspelling en leveranciersbeheer.",
         "Neural Machine Translation (NMT)":
           "Automatiseer vertalingen en communicatie met AI-gestuurde neurale machinale vertaling.",
