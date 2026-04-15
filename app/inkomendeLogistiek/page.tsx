@@ -386,7 +386,14 @@ export default function InkomendeLogistiekPage() {
               </p>
             </div>
 
-            <div className="relative flex-1 h-100 w-auto"></div>
+            <div className="relative flex-1 h-100 w-auto">
+              <Image
+                src="/NMT Inkomende Logistiek 1.png"
+                alt="Voordelen van NMT Logistiek"
+                fill
+                className="object-contain"
+              />
+            </div>
           </section>
 
           <section className="flex items-start flex-col">
