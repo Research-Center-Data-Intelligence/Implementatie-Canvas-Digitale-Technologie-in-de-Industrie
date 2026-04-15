@@ -203,7 +203,7 @@ export default function Inkoop() {
               href="#ai-inkoop"
               className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-semibold transition-all shadow-lg border border-blue-400"
             >
-              1. AI Inkoop
+              1. AI-gestuurde inkoopplanning
             </a>
             <a
               href="#nmt-inkoop"
@@ -218,20 +218,22 @@ export default function Inkoop() {
       <main className="m-16 flex flex-col gap-4">
         <div className="flex flex-col gap-4 pb-4">
           <h2 id="ai-inkoop" className="text-2xl font-bold pb-4">
-            1. AI Inkoop
+            1. AI-gestuurde inkoopplanning
           </h2>
 
           <section className="flex flex-row items-start">
             <div className="wrap-break-words flex-1">
-              <h3 className="text-lg font-semibold">Wat is AI Inkoop?</h3>
+              <h3 className="text-lg font-semibold">
+                Wat is AI-gestuurde inkoopplanning?
+              </h3>
               <p>
                 Inkoopprocessen worden steeds complexer door fluctuerende
                 grondstofprijzen, geopolitieke invloeden en een onvoorspelbare
                 vraag. Waar traditionele inkoop vaak reactief is en leunt op
                 historische prijzen, maakt AI een voorspellende aanpak mogelijk.
                 Door gebruik te maken van Machine Learning (ML) kunnen grote
-                hoeveelheden data — zoals leveranciersprijzen en
-                marktschommelingen — worden geanalyseerd om patronen te
+                hoeveelheden data, zoals leveranciersprijzen en
+                marktschommelingen, worden geanalyseerd om patronen te
                 herkennen.
               </p>
               <br />
@@ -257,7 +259,9 @@ export default function Inkoop() {
 
           <section className="flex flex-row-reverse items-start pb-4">
             <div className="wrap-break-words flex-1">
-              <h3 className="text-lg font-semibold">Waarom AI Inkoop?</h3>
+              <h3 className="text-lg font-semibold">
+                Waarom AI-gestuurde inkoopplanning?
+              </h3>
               <p>
                 Het toepassen van AI helpt bedrijven proactief te handelen in
                 plaats van achteraf prijsstijgingen te analyseren. Het stelt
@@ -292,7 +296,7 @@ export default function Inkoop() {
 
           <section className="flex items-start flex-col">
             <h3 className="font-semibold pb-4 text-lg">
-              Hoe gebruik je AI Inkoop?
+              Hoe gebruik je AI-gestuurde inkoopplanning?
             </h3>
             <p className="max-w-1/2 pb-4">
               De implementatie van AI binnen inkoop verloopt stapsgewijs en

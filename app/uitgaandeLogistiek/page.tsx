@@ -243,7 +243,7 @@ export default function UitgaandeLogistiekPage() {
 
             <div className="relative flex-1 h-100 w-auto">
               <Image
-                src="/uitgaand-1.png"
+                src="/Uitgaande logistiek 1.png"
                 alt="SCO-AI Technologie"
                 fill
                 className="object-contain"
@@ -281,7 +281,7 @@ export default function UitgaandeLogistiekPage() {
 
             <div className="relative flex-1 h-100 w-auto">
               <Image
-                src="/uitgaand-efficiency.png"
+                src="/Uitgaande logistiek 2.png"
                 alt="Voordelen SCO-AI"
                 fill
                 className="object-contain"
