@@ -256,9 +256,11 @@ export default function AdministrationPage() {
               <h3 className="font-semibold text-lg">Waarom?</h3>
               <p>
                 Binnen de administratie is het behouden van merkconsistentie in
-                alle officiële uitingen een grote uitdaging. Inconsistenties
-                kunnen de merkidentiteit verzwakken en klanten in verwarring
-                brengen.
+                alle officiële uitingen en kanalen een grote uitdaging, vooral
+                bij organisaties met meerdere merken. Inconsistenties in
+                documentatie kunnen de merkidentiteit verzwakken en klanten in
+                verwarring brengen. De implementatie levert de volgende
+                resultaten op:
               </p>
               <ul className="list-disc list-inside ml-4 space-y-1 mt-2">
                 <li>Verhoging van de merkconsistentiescore met 35%</li>
@@ -326,16 +328,16 @@ export default function AdministrationPage() {
             <div className="wrap-break-words flex-1">
               <h3 className="font-semibold text-lg">Waarom?</h3>
               <p>
-                Administratieve afdelingen hebben vaak te maken met incomplete
-                of foutieve data, wat leidt tot vertragingen en fouten in
-                facturatie.
+                Deze toepassing is essentieel omdat administratieve afdelingen
+                vaak te maken hebben met incomplete, foutieve of inconsistente
+                data, wat leidt tot vertragingen, extra correctiewerk en fouten
+                in rapportages en facturaties. Dit resulteert in minder
+                administratieve fouten, snellere verwerking van documenten en
+                hogere operationele efficiëntie. Volgens de analyse biedt deze
+                toepassing bovendien een sterke balans tussen gebruiksgemak,
+                kostenreductie en winstverhoging, terwijl de investering
+                relatief beheersbaar blijft.
               </p>
-              <ul className="list-disc list-inside ml-4 space-y-1 mt-2">
-                <li>Minder administratieve fouten en correctiewerk</li>
-                <li>Snellere verwerking van documenten</li>
-                <li>Hogere operationele efficiëntie</li>
-                <li>Sterke balans tussen kostenreductie en winstverhoging</li>
-              </ul>
             </div>
 
             <div className="flex-1 relative h-80 w-auto">

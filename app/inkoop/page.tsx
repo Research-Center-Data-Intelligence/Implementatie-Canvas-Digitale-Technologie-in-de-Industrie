@@ -320,15 +320,6 @@ export default function Inkoop() {
                 <li>Een strategisch sterkere positie in de markt</li>
               </ul>
             </div>
-
-            <div className="relative flex-1 h-100 w-auto">
-              <Image
-                src="/inkoop-strategie.png"
-                alt="Voordelen AI Inkoop"
-                fill
-                className="object-contain"
-              />
-            </div>
           </section>
 
           <section className="flex items-start flex-col">
