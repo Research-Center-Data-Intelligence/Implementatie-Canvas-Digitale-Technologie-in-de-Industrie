@@ -320,22 +320,21 @@ export default function ItPage() {
               <p>
                 Een AI-gestuurde Datakwaliteit Monitor bewaakt en optimaliseert
                 automatisch de gegevenskwaliteit in ERP-, PIM- en CMS-systemen.
-                De technologie combineert <strong>LLM</strong>,{" "}
-                <strong>machine learning</strong> en <strong>NLP</strong> om
-                grote hoeveelheden systeemdata te analyseren.
+                De technologie combineert LLM, machine learning en NLP om grote
+                hoeveelheden systeemdata te analyseren.
               </p>
               <p className="mt-2">
                 Het systeem detecteert ontbrekende velden en corrigeert
                 inconsistente data automatisch. Door koppelingen met externe
-                bronnen zoals <strong>GS1-databases</strong>
-                wordt productinformatie geverifieerd en aangevuld, wat de
-                integriteit van de bedrijfsinformatie waarborgt.
+                bronnen zoals GS1-databases wordt productinformatie geverifieerd
+                en aangevuld, wat de integriteit van de bedrijfsinformatie
+                waarborgt.
               </p>
             </div>
 
             <div className="relative flex-1 h-80 w-auto">
               <Image
-                src="/Datakwaliteit Monitor 1.png"
+                src="/IT 2.1.png"
                 alt="Datakwaliteit Monitor"
                 fill
                 className="object-contain"
@@ -357,14 +356,6 @@ export default function ItPage() {
                 <li>Lagere beheerlast voor IT-teams</li>
                 <li>Grip op betrouwbare data-uitwisseling</li>
               </ul>
-            </div>
-            <div className="flex-1 relative h-80 w-auto">
-              <Image
-                src="/Datakwaliteit Monitor 2.png"
-                alt="Voordelen Datamonitor"
-                fill
-                className="object-contain"
-              />
             </div>
           </section>
 
