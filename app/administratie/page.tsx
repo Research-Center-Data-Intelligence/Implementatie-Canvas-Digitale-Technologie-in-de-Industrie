@@ -106,39 +106,80 @@ export default function AdministrationPage() {
     },
   ];
 
-  const StepCarousel = ({ data }: { data: any[] }) => (
-    <div className="px-12 w-full">
-      <Carousel opts={{ align: "start" }} className="w-full mx-auto">
-        <CarouselContent>
-          {data.map((stap, index) => (
-            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-              <div className="p-2 h-full">
-                <div className="border-3 rounded-lg border-black p-6 h-full flex flex-col bg-card">
-                  <h4 className="font-semibold mb-2">{stap.titel}</h4>
-                  <p className="text-sm mb-2">{stap.beschrijving}</p>
-                  <ul className="list-disc list-inside ml-2 space-y-1 text-sm">
-                    {stap.punten.map((punt: string, i: number) => (
-                      <li key={i}>{punt}</li>
-                    ))}
-                  </ul>
+  const StepCarousel = ({ data }: { data: any[] }) => {
+    const [api, setApi] = useState<any>();
+    const [current, setCurrent] = useState(0);
+    const [count, setCount] = useState(0);
+
+    useEffect(() => {
+      if (!api) return;
+
+      setCount(api.scrollSnapList().length);
+      setCurrent(api.selectedScrollSnap());
+
+      const onSelect = () => {
+        setCurrent(api.selectedScrollSnap());
+      };
+
+      api.on("select", onSelect);
+
+      return () => {
+        api.off("select", onSelect); // 🔥 BELANGRIJK (cleanup!)
+      };
+    }, [api]);
+
+    return (
+      <div className="px-12 w-full">
+        <Carousel
+          setApi={setApi}
+          opts={{ align: "start" }}
+          className="w-full mx-auto"
+        >
+          <CarouselContent>
+            {data.map((stap, index) => (
+              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                <div className="p-2 h-full">
+                  <div className="border-3 rounded-lg border-black p-6 h-full flex flex-col bg-card">
+                    <h4 className="font-semibold mb-2">{stap.titel}</h4>
+                    <p className="text-sm mb-2">{stap.beschrijving}</p>
+                    <ul className="list-disc list-inside ml-2 space-y-1 text-sm">
+                      {stap.punten.map((punt: string, i: number) => (
+                        <li key={i}>{punt}</li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
-              </div>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <CarouselPrevious
-          size="icon-lg"
-          variant="ghost"
-          className="border-black border-3"
-        />
-        <CarouselNext
-          size="icon-lg"
-          variant="ghost"
-          className="border-black border-3"
-        />
-      </Carousel>
-    </div>
-  );
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+
+          {/* DOTS */}
+          <div className="flex justify-center gap-2 mt-4">
+            {Array.from({ length: count }).map((_, index) => (
+              <button
+                key={index}
+                onClick={() => api?.scrollTo(index)}
+                className={`h-2 w-2 rounded-full transition-all ${
+                  current === index ? "bg-black scale-125" : "bg-gray-300"
+                }`}
+              />
+            ))}
+          </div>
+
+          <CarouselPrevious
+            size="icon-lg"
+            variant="ghost"
+            className="border-black border-3"
+          />
+          <CarouselNext
+            size="icon-lg"
+            variant="ghost"
+            className="border-black border-3"
+          />
+        </Carousel>
+      </div>
+    );
+  };
 
   return (
     <div>
