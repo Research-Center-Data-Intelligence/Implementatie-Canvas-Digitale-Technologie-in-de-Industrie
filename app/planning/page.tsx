@@ -295,7 +295,14 @@ export default function Planning() {
               </p>
             </div>
 
-            <div className="relative h-100 w-auto flex-1"></div>
+            <div className="relative h-100 w-auto flex-1">
+              <Image
+                src="Planning 1.1.png"
+                alt="PLanning"
+                fill
+                className="object-contain"
+              ></Image>
+            </div>
           </section>
 
           <section className="flex flex-row-reverse items-start pb-4">
@@ -331,8 +338,6 @@ export default function Planning() {
                 productieproces.
               </p>
             </div>
-
-            <div className="relative h-100 w-auto flex-1"></div>
           </section>
 
           <section className="flex items-start flex-col pb-4">
@@ -401,7 +406,14 @@ export default function Planning() {
               </p>
             </div>
 
-            <div className="relative h-100 w-auto flex-1"></div>
+            <div className="relative h-100 w-auto flex-1">
+              <Image
+                src="Planning 2.1.png"
+                alt="SCO-AI Planning"
+                fill
+                className="object-contain"
+              ></Image>
+            </div>
           </section>
 
           <section className="flex flex-row-reverse items-start pb-4">
@@ -438,8 +450,6 @@ export default function Planning() {
                 vooraf op wordt aangepast.
               </p>
             </div>
-
-            <div className="relative h-100 w-auto flex-1"></div>
           </section>
 
           <section className="flex items-start flex-col pb-4">
