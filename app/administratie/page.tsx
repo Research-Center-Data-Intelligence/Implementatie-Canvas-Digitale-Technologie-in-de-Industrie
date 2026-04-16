@@ -243,7 +243,7 @@ export default function AdministrationPage() {
 
             <div className="relative flex-1 h-80 w-auto">
               <Image
-                src="/admin-1.png"
+                src="/Administratie 1.1.png"
                 alt="AI Content Controle"
                 fill
                 className="object-contain"
@@ -265,15 +265,6 @@ export default function AdministrationPage() {
                 <li>Verkorting van de contentproductiecyclus met 25%</li>
                 <li>Halvering van de foutmarge in gepubliceerde content</li>
               </ul>
-            </div>
-
-            <div className="flex-1 relative h-80 w-auto">
-              <Image
-                src="/admin-2.png"
-                alt="Voordelen"
-                fill
-                className="object-contain"
-              />
             </div>
           </section>
 
@@ -309,24 +300,21 @@ export default function AdministrationPage() {
                 en corrigeren binnen ERP- en PIM-platformen.
               </p>
               <p className="mt-2">
-                De technologie gebruikt{" "}
-                <strong>LLM (Large Language Model)</strong> om tekstuele
+                De technologie gebruikt LLM (Large Language Model) om tekstuele
                 gegevens zoals productomschrijvingen en factuurregels te
-                interpreteren. Daarnaast detecteren{" "}
-                <strong>machine learning-algoritmen</strong> inconsistenties en
-                ontbrekende velden.
+                interpreteren. Daarnaast detecteren machine learning-algoritmen
+                inconsistenties en ontbrekende velden.
               </p>
               <p className="mt-2">
-                Door koppelingen met externe databronnen, zoals{" "}
-                <strong>GS1-databases</strong>, kan het systeem informatie
-                automatisch aanvullen, waardoor de betrouwbaarheid van de
-                administratie stijgt.
+                Door koppelingen met externe databronnen, zoals GS1-databases,
+                kan het systeem informatie automatisch aanvullen, waardoor de
+                betrouwbaarheid van de administratie stijgt.
               </p>
             </div>
 
             <div className="relative flex-1 h-80 w-auto">
               <Image
-                src="/admin-1.png"
+                src="/Administratie 1.2.png"
                 alt="Datakwaliteit Techniek"
                 fill
                 className="object-contain"
@@ -352,7 +340,7 @@ export default function AdministrationPage() {
 
             <div className="flex-1 relative h-80 w-auto">
               <Image
-                src="/admin-2.png"
+                src="/Administratie 2.1.png"
                 alt="Voordelen Datakwaliteit"
                 fill
                 className="object-contain"

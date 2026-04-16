@@ -286,7 +286,7 @@ export default function Inkoop() {
 
             <div className="relative flex-1 h-100 w-auto">
               <Image
-                src="/inkoop-1.png"
+                src="/Inkoop 1.1.png"
                 alt="AI Inkoop Concept"
                 fill
                 className="object-contain"

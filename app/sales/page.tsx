@@ -424,11 +424,18 @@ export default function SalesPage() {
               </p>
             </div>
 
-            <div className="relative flex-1 h-100 w-auto"></div>
+            <div className="relative flex-1 h-100 w-auto">
+              <Image
+                src="/Sales 2.1.png"
+                alt="Product Assistant Concept"
+                fill
+                className="object-contain"
+              />
+            </div>
           </section>
 
-          <section className="flex flex-row-reverse items-start pb-4">
-            <div className="wrap-break-words flex-1">
+          <section className="flex flex-col items-start  w-full  pb-4">
+            <div>
               <h3 className="text-lg font-semibold">
                 Waarom zouden bedrijven dit moeten toepassen?
               </h3>
@@ -447,8 +454,6 @@ export default function SalesPage() {
                 voor de eindgebruiker.
               </p>
             </div>
-
-            <div className="relative flex-1 h-100 w-auto"></div>
           </section>
 
           <section className="flex items-start flex-col">

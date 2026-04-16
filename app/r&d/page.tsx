@@ -300,7 +300,7 @@ export default function NPDPage() {
 
             <div className="relative flex-1 h-100 w-auto">
               <Image
-                src="/npd-1.png"
+                src="/R&D 1.1.png"
                 alt="Generative Design"
                 fill
                 className="object-contain"
@@ -351,7 +351,7 @@ export default function NPDPage() {
 
             <div className="relative flex-1 h-80 w-auto">
               <Image
-                src="/npd-2.png"
+                src="/R&D 1.2.png"
                 alt="Waarom Generative Design"
                 fill
                 className="object-contain"

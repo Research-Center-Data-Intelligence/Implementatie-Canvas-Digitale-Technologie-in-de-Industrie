@@ -383,7 +383,14 @@ export default function HRPage() {
               </p>
             </div>
 
-            <div className="flex-1 relative h-80 w-auto"></div>
+            <div className="flex-1 relative h-80 w-auto">
+              <Image
+                src="/Vision AI afbeelding 2.png"
+                alt="Voordelen Vision AI"
+                fill
+                className="object-contain"
+              />
+            </div>
           </section>
 
           <section className="flex items-start flex-col pb-4">
